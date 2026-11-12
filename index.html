@@ -1,0 +1,701 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="ATHAR منصة تفاعلية للتوعية بالتغيرات المناخية واكتشاف الحلول البيئية باستخدام التكنولوجيا.">
+
+    <title>ATHAR | أثر - نحو مستقبل أخضر</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="container nav-container">
+
+            <a href="#home" class="logo">
+                <span class="logo-icon">🌍</span>
+                ATHAR
+            </a>
+
+            <nav class="navbar">
+                <a href="#home">الرئيسية</a>
+                <a href="#climate">المناخ</a>
+                <a href="#calculator">حاسبة الأثر</a>
+                <a href="#simulator">محاكي المستقبل</a>
+                <a href="#challenges">التحديات</a>
+            </nav>
+
+            <a href="#academy" class="nav-button">
+                اكتشف وتعلم
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- ================= HERO SECTION ================= -->
+
+        <section class="hero" id="home">
+
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <span class="section-label">
+                        TECHNOLOGY FOR A BETTER PLANET
+                    </span>
+
+                    <h1>
+                        مناخنا بيتغير...
+                        <span>وقراراتنا تقدر تغيّر المستقبل.</span>
+                    </h1>
+
+                    <p>
+                        اكتشف التغيرات المناخية، وافهم تأثيرها على
+                        حياتنا، وجرّب بنفسك إزاي التكنولوجيا
+                        تقدر تساعدنا نبني مستقبل أكثر استدامة.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#climate" class="primary-button">
+                            استكشف المناخ
+                        </a>
+
+                        <a href="#simulator" class="secondary-button">
+                            جرّب محاكي المستقبل
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="hero-visual">
+                    <div class="earth-circle">
+                        🌍
+                    </div>
+
+                    <div class="floating-card">
+                        <span>OUR PLANET</span>
+                        <strong>OUR RESPONSIBILITY</strong>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= INTRODUCTION ================= -->
+
+        <section class="introduction section-padding">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        UNDERSTAND THE CHANGE
+                    </span>
+
+                    <h2>لماذا نحتاج إلى ATHAR؟</h2>
+
+                    <p>
+                        التغيرات المناخية لم تعد مجرد قضية مستقبلية،
+                        بل أصبحت تحديًا يؤثر على البيئة والمجتمع
+                        والموارد الطبيعية.
+                    </p>
+
+                </div>
+
+                <div class="info-grid">
+
+                    <article class="info-card">
+                        <span class="card-icon">🌡️</span>
+                        <h3>ارتفاع درجات الحرارة</h3>
+                        <p>
+                            فهم ظاهرة الاحتباس الحراري وتأثيرها
+                            على درجات الحرارة والأنظمة البيئية.
+                        </p>
+                    </article>
+
+                    <article class="info-card">
+                        <span class="card-icon">💧</span>
+                        <h3>ندرة المياه</h3>
+                        <p>
+                            التعرف على أهمية الحفاظ على الموارد
+                            المائية والاستخدام المستدام للمياه.
+                        </p>
+                    </article>
+
+                    <article class="info-card">
+                        <span class="card-icon">🌱</span>
+                        <h3>التدهور البيئي</h3>
+                        <p>
+                            فهم تأثير الأنشطة البشرية على البيئة
+                            والتنوع البيولوجي.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CLIMATE DASHBOARD ================= -->
+
+        <section class="climate-section section-padding" id="climate">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        CLIMATE MONITORING
+                    </span>
+
+                    <h2>لوحة مراقبة المناخ</h2>
+
+                    <p>
+                        استكشف المؤشرات المناخية وتعرف على
+                        التغيرات البيئية من خلال البيانات.
+                    </p>
+
+                </div>
+
+                <div class="climate-controls">
+
+                    <label for="governorate">
+                        اختاري المحافظة:
+                    </label>
+
+                    <select id="governorate">
+                        <option value="Cairo">القاهرة</option>
+                        <option value="Alexandria">الإسكندرية</option>
+                        <option value="Aswan">أسوان</option>
+                        <option value="Luxor">الأقصر</option>
+                        <option value="Giza">الجيزة</option>
+                    </select>
+
+                    <button id="loadClimate" class="primary-button">
+                        عرض البيانات
+                    </button>
+
+                </div>
+
+                <div class="climate-grid">
+
+                    <article class="climate-card">
+                        <span>🌡️</span>
+                        <h3>درجة الحرارة</h3>
+                        <p id="temperature">--</p>
+                        <small>درجة مئوية</small>
+                    </article>
+
+                    <article class="climate-card">
+                        <span>💧</span>
+                        <h3>الرطوبة</h3>
+                        <p id="humidity">--</p>
+                        <small>%</small>
+                    </article>
+
+                    <article class="climate-card">
+                        <span>💨</span>
+                        <h3>سرعة الرياح</h3>
+                        <p id="wind">--</p>
+                        <small>كم / ساعة</small>
+                    </article>
+
+                </div>
+
+                <div class="chart-container">
+
+                    <h3>تحليل درجات الحرارة التاريخية</h3>
+
+                    <canvas id="climateChart">
+                    </canvas>
+
+                    <p id="chartStatus">
+                        سيتم عرض البيانات التاريخية بعد ربط مصدر البيانات.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CARBON CALCULATOR ================= -->
+
+        <section class="calculator-section section-padding"
+            id="calculator">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        CARBON FOOTPRINT
+                    </span>
+
+                    <h2>حاسبة البصمة الكربونية</h2>
+
+                    <p>
+                        اكتشف كيف تؤثر عاداتك اليومية على البيئة،
+                        واحسب تقديرًا لانبعاثات الكربون الناتجة عنها.
+                    </p>
+
+                </div>
+
+                <div class="calculator-box">
+
+                    <form id="carbonForm">
+
+                        <div class="form-group">
+
+                            <label for="electricity">
+                                استهلاك الكهرباء الشهري (kWh)
+                            </label>
+
+                            <input type="number"
+                                id="electricity"
+                                min="0"
+                                placeholder="مثال: 250"
+                                required>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="transport">
+                                المسافة اليومية بالسيارة (كم)
+                            </label>
+
+                            <input type="number"
+                                id="transport"
+                                min="0"
+                                placeholder="مثال: 20"
+                                required>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="plastic">
+                                عدد الزجاجات البلاستيكية أسبوعيًا
+                            </label>
+
+                            <input type="number"
+                                id="plastic"
+                                min="0"
+                                placeholder="مثال: 5"
+                                required>
+
+                        </div>
+
+                        <button type="submit" class="primary-button">
+                            احسب بصمتي الكربونية
+                        </button>
+
+                    </form>
+
+                    <div class="calculator-result"
+                        id="carbonResult">
+
+                        <span>🌿</span>
+
+                        <h3>نتيجتك هتظهر هنا</h3>
+
+                        <p>
+                            أدخل بياناتك لمعرفة تقدير أثرك البيئي.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FUTURE SIMULATOR ================= -->
+
+        <section class="simulator-section section-padding"
+            id="simulator">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        FUTURE SIMULATOR
+                    </span>
+
+                    <h2>ماذا لو غيّرنا قراراتنا؟</h2>
+
+                    <p>
+                        تحكم في خصائص مدينة افتراضية واكتشف
+                        كيف يمكن للقرارات المستدامة أن تغير
+                        مؤشرات الاستدامة فيها.
+                    </p>
+
+                </div>
+
+                <div class="simulator-box">
+
+                    <div class="simulator-controls">
+
+                        <div class="form-group">
+
+                            <label for="greenSpaces">
+                                المساحات الخضراء
+                            </label>
+
+                            <input type="range"
+                                id="greenSpaces"
+                                min="0"
+                                max="100"
+                                value="20">
+
+                            <span id="greenValue">20%</span>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="solarEnergy">
+                                الاعتماد على الطاقة الشمسية
+                            </label>
+
+                            <input type="range"
+                                id="solarEnergy"
+                                min="0"
+                                max="100"
+                                value="10">
+
+                            <span id="solarValue">10%</span>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="publicTransport">
+                                استخدام المواصلات العامة
+                            </label>
+
+                            <input type="range"
+                                id="publicTransport"
+                                min="0"
+                                max="100"
+                                value="30">
+
+                            <span id="transportValue">30%</span>
+
+                        </div>
+
+                        <button id="simulateButton"
+                            class="primary-button">
+
+                            اختبر مدينتك
+
+                        </button>
+
+                    </div>
+
+                    <div class="simulator-result"
+                        id="simulationResult">
+
+                        <div class="city-icon">🏙️</div>
+
+                        <h3>مدينتك المستقبلية</h3>
+
+                        <p>
+                            غيّر المؤشرات واضغط على اختبار مدينتك
+                            لرؤية نتائج السيناريو الافتراضي.
+                        </p>
+
+                        <div class="simulation-score">
+                            <span>مؤشر الاستدامة</span>
+                            <strong id="sustainabilityScore">--</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <p class="disclaimer">
+                    ملاحظة: نتائج المحاكاة تقديرية وتعليمية،
+                    وتعتمد على نموذج افتراضي مبسط وليست تنبؤات
+                    مناخية فعلية.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ECO CHALLENGES ================= -->
+
+        <section class="challenges-section section-padding"
+            id="challenges">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        TAKE ACTION
+                    </span>
+
+                    <h2>تحدياتنا البيئية</h2>
+
+                    <p>
+                        التغيير الحقيقي يبدأ بخطوات صغيرة،
+                        شارك في التحديات وكن جزءًا من الحل.
+                    </p>
+
+                </div>
+
+                <div class="challenges-grid">
+
+                    <article class="challenge-card">
+
+                        <span class="card-icon">💡</span>
+
+                        <h3>تحدي توفير الطاقة</h3>
+
+                        <p>
+                            أطفئ الأجهزة والإضاءة غير المستخدمة
+                            لتقليل استهلاك الكهرباء.
+                        </p>
+
+                        <button class="challenge-button"
+                            data-challenge="energy">
+
+                            أنجزت التحدي
+
+                        </button>
+
+                    </article>
+
+                    <article class="challenge-card">
+
+                        <span class="card-icon">💧</span>
+
+                        <h3>تحدي توفير المياه</h3>
+
+                        <p>
+                            قلل وقت استخدام المياه وتجنب
+                            إهدار الموارد المائية.
+                        </p>
+
+                        <button class="challenge-button"
+                            data-challenge="water">
+
+                            أنجزت التحدي
+
+                        </button>
+
+                    </article>
+
+                    <article class="challenge-card">
+
+                        <span class="card-icon">🌳</span>
+
+                        <h3>تحدي التشجير</h3>
+
+                        <p>
+                            شارك في زراعة النباتات وحافظ
+                            على المساحات الخضراء.
+                        </p>
+
+                        <button class="challenge-button"
+                            data-challenge="trees">
+
+                            أنجزت التحدي
+
+                        </button>
+
+                    </article>
+
+                </div>
+
+                <div class="achievement-box">
+
+                    <h3>إنجازاتك البيئية</h3>
+
+                    <p>
+                        عدد التحديات المكتملة:
+                        <strong id="completedChallenges">0</strong>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CLIMATE ACADEMY ================= -->
+
+        <section class="academy-section section-padding"
+            id="academy">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        CLIMATE ACADEMY
+                    </span>
+
+                    <h2>اختبر معلوماتك المناخية</h2>
+
+                    <p>
+                        هل تعرف حقًا ما يحدث لكوكبنا؟
+                        اختبر معلوماتك من خلال الأسئلة التالية.
+                    </p>
+
+                </div>
+
+                <div class="quiz-box">
+
+                    <h3 id="question">
+                        ما السبب الرئيسي لزيادة الاحتباس الحراري؟
+                    </h3>
+
+                    <div class="quiz-options">
+
+                        <button class="quiz-option"
+                            data-answer="wrong">
+                            زيادة الأنشطة البركانية فقط
+                        </button>
+
+                        <button class="quiz-option"
+                            data-answer="correct">
+                            زيادة غازات الدفيئة الناتجة عن الأنشطة البشرية
+                        </button>
+
+                        <button class="quiz-option"
+                            data-answer="wrong">
+                            دوران الأرض حول الشمس
+                        </button>
+
+                    </div>
+
+                    <p id="quizFeedback"></p>
+
+                    <p>
+                        النقاط:
+                        <strong id="quizScore">0</strong>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section class="about-section section-padding"
+            id="about">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span class="section-label">
+                        ABOUT ATHAR
+                    </span>
+
+                    <h2>كل قرار له أثر</h2>
+
+                    <p>
+                        ATHAR ليست مجرد منصة لعرض المعلومات،
+                        بل تجربة تعليمية وتكنولوجية تهدف إلى
+                        تحويل الوعي المناخي إلى سلوك إيجابي
+                        وقرارات أكثر استدامة.
+                    </p>
+
+                </div>
+
+                <div class="about-highlight">
+
+                    <span>🌍</span>
+
+                    <h3>
+                        مستقبل الكوكب مسؤوليتنا جميعًا.
+                    </h3>
+
+                    <p>
+                        افهم التغير، اكتشف الحل، واصنع أثرك.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <a href="#home" class="logo">
+                🌍 ATHAR
+            </a>
+
+            <p>
+                Technology for a Sustainable Future
+            </p>
+
+            <p>
+                مشروع توعوي تفاعلي للتغيرات المناخية والتكنولوجيا.
+            </p>
+
+            <div class="footer-links">
+                <a href="#home">الرئيسية</a>
+                <a href="#climate">المناخ</a>
+                <a href="#about">عن المشروع</a>
+            </div>
+
+            <p class="copyright">
+                © 2026 ATHAR. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
